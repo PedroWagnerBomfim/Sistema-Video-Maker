@@ -1,0 +1,19 @@
+{
+  "name": "sistema-video-maker",
+  "version": "1.0.0",
+  "description": "Projeto open soucer para a criação de videos automatizados",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PedroWagnerBomfim/Sistema-Video-Maker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PedroWagnerBomfim/Sistema-Video-Maker/issues"
+  },
+  "homepage": "https://github.com/PedroWagnerBomfim/Sistema-Video-Maker#readme"
+}
