@@ -4,7 +4,9 @@ const robots = {
 };
 
 async function start() {
-  const content = {};
+  const content = {
+    maximumSentences: 10
+  }
 
   content.searchTerm = askAndreturnSearchTerm();
   content.prefix = askAndReturnPrefix();
