@@ -1,32 +1,12 @@
-const readline = require("readline-sync");
 const robots = {
-  text: require("./robots/text.js"),
-};
-
-async function start() {
-  const content = {
-    maximumSentences: 10
-  }
-
-  content.searchTerm = askAndreturnSearchTerm();
-  content.prefix = askAndReturnPrefix();
-
-  await robots.text(content);
-
-  function askAndreturnSearchTerm() {
-    return readline.question("Type a Wikipedia search term:");
-  }
-
-  function askAndReturnPrefix() {
-    const prefixes = ["Who is", "What is", "The history of"];
-    const selectedPrefixIndex = readline.keyInSelect(
-      prefixes,
-      "Choose a option:"
-    );
-    const selectedPrefixText = prefixes[selectedPrefixIndex];
-
-    return selectedPrefixText;
-  }
+  input: require('./robots/input.js'),
+  text: require('./robots/text.js'),
+  state: require('./robots/state.js'),
 }
 
-start();
+async function start() {
+  robots.input()
+  await robots.text()
+}
+
+start()
