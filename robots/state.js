@@ -14,5 +14,5 @@ function load() {
 
 module.exports = {
     save,
-    load,
+    load
 }
