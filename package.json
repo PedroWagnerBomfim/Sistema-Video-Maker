@@ -18,6 +18,8 @@
   "homepage": "https://github.com/PedroWagnerBomfim/Sistema-Video-Maker#readme",
   "dependencies": {
     "algorithmia": "^0.3.10",
+    "googleapis": "^66.0.0",
+    "readline-sync": "^1.4.9",
     "sbd": "^1.0.18",
     "watson-developer-cloud": "^4.0.1"
   }
